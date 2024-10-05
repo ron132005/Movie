@@ -3,44 +3,58 @@ body {
     color: #00ff00; /* Neon green color */
     font-family: 'Times New Roman', Times, serif; /* Set font to Times New Roman */
     text-align: center; /* Center all text */
+    padding-top: 60px; /* Add padding to avoid overlapping content with header */
 }
 
 header {
-    font-size: 3em;
-    margin: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px; /* Make the header smaller */
+    background-color: black; /* Match background */
+    color: #00ff00; /* Neon green text */
+    z-index: 1000; /* Ensure header is on top */
+    font-size: 1.5em; /* Reduce font size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Brush Script MT', cursive; /* Set header font to Brush Script MT */
 }
 
 input[type="text"] {
     padding: 10px;
     font-size: 1.2em;
-    border: 2px solid #00ff00;
+    border: 2px solid royalblue; /* Royal blue border */
     background-color: black;
     color: #00ff00;
     width: 300px; /* Fixed width for input box */
     margin: 10px auto; /* Center input */
     display: block; /* Block element for centering */
+    border-radius: 8px; /* Rounded corners */
 }
 
 .dropdown {
     position: absolute;
     background-color: black;
-    border: 2px solid #00ff00;
+    border: 2px solid royalblue; /* Royal blue border */
+    width: auto; /* Adjust width automatically */
     z-index: 1000;
     display: none;
     left: 50%; /* Center the dropdown */
     transform: translateX(-50%); /* Adjust for its own width */
+    border-radius: 8px; /* Rounded corners */
 }
 
 .dropdown-item {
     display: flex;
     align-items: center; /* Align items in center */
     padding: 10px;
-    border-bottom: 1px solid #00ff00; /* Neon border */
+    border-bottom: 1px solid royalblue; /* Changed bottom border to royal blue */
     cursor: pointer; /* Pointer cursor on hover */
 }
 
 .dropdown-item:hover {
-    background-color: rgba(0, 255, 0, 0.2); /* Highlight on hover */
+    background-color: rgba(0, 0, 255, 0.2); /* Slight blue highlight on hover */
 }
 
 .dropdown-item img {
@@ -50,10 +64,11 @@ input[type="text"] {
 }
 
 .show-card {
-    border: 2px solid #00ff00; /* Neon border for show cards */
+    border: 2px solid royalblue; /* Royal blue border for show cards */
     padding: 10px;
     margin: 10px auto;
     display: inline-block; /* Inline block for centering */
+    border-radius: 8px; /* Rounded corners */
 }
 
 .show-card img {
@@ -61,8 +76,7 @@ input[type="text"] {
     height: auto; /* Maintain aspect ratio */
 }
 
-#seasonContainer,
-#episodeContainer {
+#seasonContainer, #episodeContainer {
     margin: 10px auto; /* Center dropdown containers */
     display: flex;
     flex-direction: column; /* Stack dropdowns vertically */
@@ -72,42 +86,69 @@ input[type="text"] {
 select {
     padding: 10px;
     font-size: 1em;
-    border: 2px solid #00ff00; /* Neon border */
+    border: 2px solid royalblue; /* Royal blue border */
     background-color: black;
-    color: #00ff00;
-    min-width: 150px; /* Minimum width for dropdown */
-    max-width: 400px; /* Optional: Max width for dropdown */
+    color: #00ff00; /* Neon green text */
+    width: auto; /* Adjust width based on content */
     margin: 10px auto; /* Center dropdown */
-    white-space: nowrap; /* Prevent wrapping of text */
+    border-radius: 8px; /* Rounded corners */
 }
 
-/* Video container styling */
 #videoContainer {
     margin: 20px auto;
-    padding: 10px;
-    border: 2px solid #00ff00; /* Neon border */
-    background-color: black; /* Match background */
-    width: 80%; /* Responsive width */
-    display: none; /* Initially hidden */
+    border: 2px solid royalblue; /* Royal blue border for video container */
+    width: 80%;
+    height: 400px;
+    border-radius: 8px; /* Rounded corners */
 }
 
-iframe {
-    width: 100%; /* Full width of the container */
-    height: 400px; /* Fixed height for the video player */
-    border: none; /* Remove default border */
+#videoPlayer {
+    width: 100%;
+    height: 100%;
 }
-/* Other styles remain unchanged */
 
 footer {
     margin: 20px auto; /* Center footer */
     padding: 20px; /* Padding for content */
-    border: 2px solid #00ff00; /* Neon border */
+    border: 2px solid royalblue; /* Royal blue border for footer */
     background-color: black; /* Match background */
     color: #00ff00; /* Neon green text color */
     max-width: 800px; /* Maximum width for footer */
     text-align: center; /* Center align text */
+    border-radius: 8px; /* Rounded corners */
 }
 
 .footer-content {
-    font-size: 0.9em; /* Slightly smaller text for footer */
+    font-size: 1.5em; /* Slightly smaller text for footer */
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 768px) {
+    header {
+        height: 40px; /* Smaller header for mobile */
+        font-size: 1.2em; /* Reduce font size */
+    }
+
+    input[type="text"] {
+        width: 90%; /* Full width for input on mobile */
+        font-size: 1em; /* Slightly smaller font size */
+    }
+
+    .dropdown {
+        width: 90%; /* Full width for dropdown on mobile */
+    }
+
+    .show-card img {
+        width: 100px; /* Smaller images on mobile */
+    }
+
+    #videoContainer {
+        width: 100%; /* Full width video on mobile */
+        height: 300px; /* Adjust height for mobile */
+    }
+
+    footer {
+        max-width: 90%; /* Reduce footer width for mobile */
+        padding: 10px; /* Less padding on mobile */
+    }
 }
