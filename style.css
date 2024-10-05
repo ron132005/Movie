@@ -154,5 +154,7 @@ footer {
     footer {
         max-width: 90%; /* Reduce footer width for mobile */
         padding: 10px; /* Less padding on mobile */
+        font-size: 1.2em;
+        font-family: 'Times New Roman', Times, serif;
     }
 }
