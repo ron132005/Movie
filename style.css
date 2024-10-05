@@ -138,6 +138,10 @@ footer {
         width: 90%; /* Full width for dropdown on mobile */
     }
 
+    select {
+        width: 300px; /* Fixed width for select dropdown on mobile */
+    }
+
     .show-card img {
         width: 100px; /* Smaller images on mobile */
     }
