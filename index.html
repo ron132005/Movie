@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>getRONed</title>
+</head>
+<body>
+    <header>
+        <h1>getRONed</h1>
+    </header>
+    <div>
+        <input type="text" id="searchBox" placeholder="Search for TV shows">
+        <div id="dropdown" class="dropdown"></div>
+    </div>
+    <div id="resultsContainer"></div>
+
+    <!-- New dropdowns for season and episode -->
+    <div id="seasonContainer" style="display: none;">
+        <select id="seasonDropdown">
+            <option value="">Select Season</option>
+        </select>
+    </div>
+    <div id="episodeContainer" style="display: none;">
+        <select id="episodeDropdown">
+            <option value="">Select Episode</option>
+        </select>
+    </div>
+
+    <!-- Video container for embedding -->
+    <div id="videoContainer">
+        <iframe id="videoPlayer" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Footer with disclaimer -->
+    <footer>
+        <div class="footer-content">
+            <p>DISCLAIMER! This website does not host any files on its server. All content displayed on this site is provided by third-party sites and services. I, Ron Funiestas, do not control or endorse any content, products, or services provided by these sites. Any reliance on the content or services provided by third-party sites is done at your own risk. I recommend that you read the terms and conditions and privacy policies of any third-party site that you visit. If you have any questions or concerns about the content hosted by third-party sites, please contact the site owner or administrator directly!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
