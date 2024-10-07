@@ -52,6 +52,7 @@ input[type="text"] {
     border-bottom: 1px solid royalblue; /* Changed bottom border to royal blue */
     cursor: pointer; /* Pointer cursor on hover */
     font-family: 'Press Start 2P', sans-serif; /* Apply Press Start 2P font */
+    font-size: 0.9em; /* Smaller font size */
 }
 
 .dropdown-item:hover {
@@ -86,7 +87,7 @@ input[type="text"] {
 
 select {
     padding: 10px;
-    font-size: 1em;
+    font-size: 0.9em; /* Slightly smaller font size */
     border: 2px solid royalblue; /* Royal blue border */
     background-color: black;
     color: #00ff00; /* Neon green text */
@@ -119,10 +120,11 @@ footer {
     text-align: center; /* Center align text */
     border-radius: 8px; /* Rounded corners */
     font-family: 'Press Start 2P', sans-serif; /* Apply Press Start 2P font */
+    font-size: 0.9em; /* Smaller font size */
 }
 
 .footer-content {
-    font-size: 1.5em; /* Slightly smaller text for footer */
+    font-size: 1.2em; /* Slightly smaller text for footer */
 }
 
 /* Media Queries for Mobile */
@@ -143,6 +145,7 @@ footer {
 
     select {
         width: 300px; /* Fixed width for select dropdown on mobile */
+        font-size: 0.8em; /* Smaller font size */
     }
 
     .show-card img {
@@ -155,7 +158,7 @@ footer {
     }
 
     footer {
-        font-size: 0.8em; /* Smaller font size */
+        font-size: 0.7em; /* Smaller font size */
         max-width: 90%; /* Reduce footer width for mobile */
         padding: 5px; /* Less padding on mobile */
     }
