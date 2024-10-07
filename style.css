@@ -1,7 +1,7 @@
 body {
     background-color: black;
     color: #00ff00; /* Neon green color */
-    font-family: 'Times New Roman', Times, serif; /* Set font to Times New Roman */
+    font-family: 'Times New Roman', Times, serif; /* Set default font to Times New Roman */
     text-align: center; /* Center all text */
     padding-top: 60px; /* Add padding to avoid overlapping content with header */
 }
@@ -51,6 +51,7 @@ input[type="text"] {
     padding: 10px;
     border-bottom: 1px solid royalblue; /* Changed bottom border to royal blue */
     cursor: pointer; /* Pointer cursor on hover */
+    font-family: 'Press Start 2P', sans-serif; /* Apply Press Start 2P font */
 }
 
 .dropdown-item:hover {
@@ -92,6 +93,7 @@ select {
     width: auto; /* Adjust width based on content */
     margin: 10px auto; /* Center dropdown */
     border-radius: 8px; /* Rounded corners */
+    font-family: 'Press Start 2P', sans-serif; /* Apply Press Start 2P font */
 }
 
 #videoContainer {
@@ -116,7 +118,7 @@ footer {
     max-width: 800px; /* Maximum width for footer */
     text-align: center; /* Center align text */
     border-radius: 8px; /* Rounded corners */
-    font-family: 'Times New Roman', Times, serif; /* Set font to Times New Roman */
+    font-family: 'Press Start 2P', sans-serif; /* Apply Press Start 2P font */
 }
 
 .footer-content {
