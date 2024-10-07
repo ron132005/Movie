@@ -116,11 +116,11 @@ footer {
     max-width: 800px; /* Maximum width for footer */
     text-align: center; /* Center align text */
     border-radius: 8px; /* Rounded corners */
+    font-family: 'Times New Roman', Times, serif; /* Set font to Times New Roman */
 }
 
 .footer-content {
     font-size: 1.5em; /* Slightly smaller text for footer */
-    font-family: 'Times New Roman', Times, serif; /* Set font to Times New Roman */
 }
 
 /* Media Queries for Mobile */
@@ -153,6 +153,7 @@ footer {
     }
 
     footer {
+        font-family: 'Times New Roman', Times, serif; /* Set font to Times New Roman */
         font-size: 0.8em; /* Smaller font size */
         max-width: 90%; /* Reduce footer width for mobile */
         padding: 5px; /* Less padding on mobile */
