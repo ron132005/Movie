@@ -53,6 +53,7 @@ input[type="text"] {
     cursor: pointer; /* Pointer cursor on hover */
     font-family: 'Press Start 2P', sans-serif; /* Apply Press Start 2P font */
     font-size: 0.9em; /* Smaller font size */
+    font-weight: normal; /* Make the font normal weight */
 }
 
 .dropdown-item:hover {
@@ -95,6 +96,7 @@ select {
     margin: 10px auto; /* Center dropdown */
     border-radius: 8px; /* Rounded corners */
     font-family: 'Press Start 2P', sans-serif; /* Apply Press Start 2P font */
+    font-weight: normal; /* Make the font normal weight */
 }
 
 #videoContainer {
@@ -121,6 +123,7 @@ footer {
     border-radius: 8px; /* Rounded corners */
     font-family: 'Press Start 2P', sans-serif; /* Apply Press Start 2P font */
     font-size: 0.9em; /* Smaller font size */
+    font-weight: normal; /* Make the font normal weight */
 }
 
 .footer-content {
@@ -146,6 +149,7 @@ footer {
     select {
         width: 300px; /* Fixed width for select dropdown on mobile */
         font-size: 0.8em; /* Smaller font size */
+        font-weight: normal; /* Make the font normal weight */
     }
 
     .show-card img {
@@ -161,5 +165,6 @@ footer {
         font-size: 0.7em; /* Smaller font size */
         max-width: 90%; /* Reduce footer width for mobile */
         padding: 5px; /* Less padding on mobile */
+        font-weight: normal; /* Make the font normal weight */
     }
 }
