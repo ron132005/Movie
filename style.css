@@ -1,7 +1,7 @@
 body {
     background-color: black;
     color: #00ff00; /* Neon green color */
-    font-family: 'Times New Roman', Times, serif; /* Set default font to Times New Roman */
+    font-family: 'Times New Roman', Times, serif; /* Set font to Times New Roman */
     text-align: center; /* Center all text */
     padding-top: 60px; /* Add padding to avoid overlapping content with header */
 }
@@ -51,9 +51,6 @@ input[type="text"] {
     padding: 10px;
     border-bottom: 1px solid royalblue; /* Changed bottom border to royal blue */
     cursor: pointer; /* Pointer cursor on hover */
-    font-family: 'Press Start 2P', sans-serif; /* Apply Press Start 2P font */
-    font-size: 0.9em; /* Smaller font size */
-    font-weight: normal; /* Make the font normal weight */
 }
 
 .dropdown-item:hover {
@@ -88,15 +85,13 @@ input[type="text"] {
 
 select {
     padding: 10px;
-    font-size: 0.9em; /* Slightly smaller font size */
+    font-size: 1em;
     border: 2px solid royalblue; /* Royal blue border */
     background-color: black;
     color: #00ff00; /* Neon green text */
     width: auto; /* Adjust width based on content */
     margin: 10px auto; /* Center dropdown */
     border-radius: 8px; /* Rounded corners */
-    font-family: 'Press Start 2P', sans-serif; /* Apply Press Start 2P font */
-    font-weight: normal; /* Make the font normal weight */
 }
 
 #videoContainer {
@@ -121,13 +116,11 @@ footer {
     max-width: 800px; /* Maximum width for footer */
     text-align: center; /* Center align text */
     border-radius: 8px; /* Rounded corners */
-    font-family: 'Press Start 2P', sans-serif; /* Apply Press Start 2P font */
-    font-size: 0.9em; /* Smaller font size */
-    font-weight: normal; /* Make the font normal weight */
+    font-family: 'Times New Roman', Times, serif; /* Set font to Times New Roman */
 }
 
 .footer-content {
-    font-size: 1.2em; /* Slightly smaller text for footer */
+    font-size: 1.5em; /* Slightly smaller text for footer */
 }
 
 /* Media Queries for Mobile */
@@ -148,8 +141,6 @@ footer {
 
     select {
         width: 300px; /* Fixed width for select dropdown on mobile */
-        font-size: 0.8em; /* Smaller font size */
-        font-weight: normal; /* Make the font normal weight */
     }
 
     .show-card img {
@@ -162,9 +153,8 @@ footer {
     }
 
     footer {
-        font-size: 0.7em; /* Smaller font size */
+        font-size: 0.8em; /* Smaller font size */
         max-width: 90%; /* Reduce footer width for mobile */
         padding: 5px; /* Less padding on mobile */
-        font-weight: normal; /* Make the font normal weight */
     }
 }
